@@ -1,0 +1,23 @@
+/*  
+
+we represent class using . dot in css
+.red means red class  
+
+*/
+
+.red{
+    background-color: rgb(255, 149, 149);
+}
+.green{
+    background-color: lightgreen;
+}
+
+/* 
+
+we represent ids using # hashtag
+#.uniquieid2 means id = uniquieid2, its a unique id not a class 
+
+*/
+#uniquieid2{
+    background-color: rgb(130, 130, 255);
+}
