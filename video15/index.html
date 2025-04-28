@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways to Add CSS</title>
+
+    <!-- Internal CSS -->
+    <style>
+        h3 {
+            background-color: lightsalmon;
+            color: greenyellow;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+
+        <!-- Inline CSS -->
+        <h1 style="background-color: rgb(249, 127, 127); color: yellow;">Ways to Add CSS in HTML Files</h1>
+
+        <h3>We have 3 ways to add CSS in an HTML file:</h3>
+
+        <p><b>Inline CSS:</b> Adding styles directly inside the HTML tag using the "style" attribute.</p>
+        <p>❌ Negative: If there are multiple similar tags (e.g., 4 h1s), you have to style each manually. This takes
+            more time and creates more lines of code, which is not good practice.</p>
+
+        <p><b>Internal CSS:</b> Adding styles inside a &lt;style&gt; tag within the &lt;head&gt; section.</p>
+        <p>✅ Positive: You can style multiple tags at once. For example, you can style all h1 tags together by writing
+            one rule, saving time and making the code cleaner.</p>
+
+        <p><b>External CSS:</b> Creating a separate .css file and linking it to the HTML file.</p>
+        <p>✅ Positive: Best practice for big websites. Keeps HTML clean and separates design from structure.</p>
+
+        <h3>When to Use Which CSS?</h3>
+
+        <h4><b>Inline CSS:</b></h4>
+        <p>Generally, try to avoid writing inline CSS. You can use it for quick testing or very small changes.</p>
+
+        <h4><b>Internal CSS:</b></h4>
+        <p>You can use this if your website is not too complicated and doesn't require too much CSS.</p>
+
+        <h4><b>External CSS:</b></h4>
+        <p>Most popular and recommended. You can manage all CSS styling in a single file, making it easier to navigate,
+            faster to edit, and better to read for large projects.</p>
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
