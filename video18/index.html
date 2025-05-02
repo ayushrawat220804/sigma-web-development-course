@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+
+        }
+        .box1{
+            margin: 25px;
+            padding: 10px;
+            color: red;
+            border: 2px solid;
+            height: 200px; /* element height = content + boder + padding  */
+            box-sizing: border-box; /* including border and padding only , not margin  */
+
+        }
+        /* margine collapse - it says that if two elements margins are overlapping then , what ever element contains maximum margin will only apply once */
+        .box2{
+            margin: 25px;
+            padding: 10px;
+            color: rgb(27, 0, 183);
+            border: 2px solid;
+            height: 200px; /* element height = content + boder + padding  */
+            box-sizing: border-box; /* including border and padding only , not margin  */
+
+        }
+        .box3{
+            color: yellow;
+    
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box box1">i m a box </div>
+        <div class="box box2">i m another box </div>
+    </main>
+    
+</body>
+</html>

@@ -1,62 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Selectors</title>
 
-    <style>
-        /* Element selector */
-        div {
-            background-color: rgb(255, 104, 104);
-        }
+  <style>
+    /* Universal Selector: resets margin & padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        /* Class selector: use . (dot) before class name */
-        .red {
-            background-color: orange;
-        }
+    /* Element selector */
+    div {
+      background-color: rgb(255, 104, 104);
+      margin: 10px;
+      padding: 10px;
+    }
 
-        /* ID selector: use # (hashtag) before id name */
-        #green {
-            background-color: lightgreen;
-        }
+    /* Class selector */
+    .red {
+      background-color: orange;
+    }
 
-        /* Child selector: direct child only (>) */
-        div > p {
-            background-color: rgb(255, 69, 97);
-            color: rgb(47, 255, 0);
-        }
+    /* ID selector */
+    #green {
+      background-color: lightgreen;
+    }
 
-        /* Nested child selector example (commented) */
-        /*
-        div > article > p {
-            background-color: rgb(215, 184, 189);
-            color: rgb(0, 0, 0);
-        }
-        */
+    /* Child selector: targets only direct child <p> inside <div> */
+    div > p {
+      background-color: rgb(255, 69, 97);
+      color: rgb(47, 255, 0);
+    }
 
-        /* Descendant selector: any level inside */
-        div p {
-            background-color: rgb(215, 184, 189);
-            color: rgb(0, 0, 0);
-        }
+    /* Descendant selector: targets all <p> anywhere inside <div> */
+    div p {
+      background-color: rgb(215, 184, 189);
+      color: black;
+    }
 
-        /* Universal Selector */
-        *{
-            margin: 0;
-            padding: 0;
+    /* Pseudo Selectors */
+    a:link {
+      color: gray;
+    }
 
-        }
+    a:visited {
+      background-color: rgb(255, 215, 141);
+      color: rgb(159, 50, 50);
+    }
 
-        /* Pseudo Selector */
+    a:hover {
+      background-color: cadetblue;
+      color: white;
+    }
 
+    a:active {
+      background-color: red;
+      color: rgb(162, 255, 2);
+    }
 
-    </style>
+    /* First child paragraph inside any div */
+    div p:first-child {
+      background-color: aqua;
+      color: black;
+    }
+  </style>
 </head>
 
 <body>
-
+  <main>
     <div>I am a div</div>
 
     <div class="red">I am another div (with class "red")</div>
@@ -64,21 +79,32 @@
     <div id="green">I am one more div (with id "green")</div>
 
     <div>
-        <p>I am a paragraph directly inside div</p>
+      <p>I am a paragraph directly inside div</p>
     </div>
 
     <div>
-        <article>
-            <p>I am a paragraph inside article inside div</p>
-        </article>
+      <article>
+        <p>I am a paragraph inside article inside div</p>
+      </article>
     </div>
 
-    <p>Pseudo selector tags : <br>:visited - change color after the user click on a link, :link - color, before visiting a link,  :active - background color, when clicking to a link </p>
-    <p>here's how </p>
-    <a href="https://www.google.com">Google</a><br>
-    <a href="https://www.facebook.com">facebook</a><br>
-    <a href="https://www.youtube.com">Youtube</a>
+    <div>
+      <p>I am the first child paragraph in this div</p>
+      <p>I am a second paragraph</p>
+    </div>
 
+    <p><strong>Pseudo Selector Explanation:</strong></p>
+    <ul>
+      <li><code>:visited</code> – Changes color *after* link is clicked</li>
+      <li><code>:link</code> – Default color *before* visiting</li>
+      <li><code>:hover</code> – When user hovers over link</li>
+      <li><code>:active</code> – While user is clicking</li>
+    </ul>
+
+    <p>Try clicking the links below to test:</p>
+    <p><a href="https://www.google.com">Google</a></p>
+    <p><a href="https://www.facebook.com">Facebook</a></p>
+    <p><a href="https://www.youtube.com">YouTube</a></p>
+  </main>
 </body>
-
 </html>
