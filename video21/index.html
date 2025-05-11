@@ -3,11 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Css Specifictiy</title>
+    <style>
+        h1 {
+            color: aqua;
+        }
+        .yellow {
+            color: yellow;
+        }
+        .red{
+            color: red;
+        }
+        .purple{
+            color: purple;
+        }
+        #id1{
+            color: orange;
+
+        }
+
+        /* attribute selector [] */
+        [data-x=a123]{
+            background-color: green;
+        }
+
+        p1{
+            color: lightgray;
+        }
+        
+        h2 {
+            color: blue;
+            color: lightcoral !important; /* most important */
+
+        }
+        
+
+
+    </style>
 
 </head>
 <body>
-    <div></div>
+    <h1 id="id1" class="yellow red purple" data-x="a123" >Css Specifictiy</h1>
+    <p><b>cascade algorithm </b>rules:</p>
+    <p><b>1: position and order of appearance</b></p>
+    <p><b>2: Specifictiy</b> - inline style > id selector > class / attribute selector > element selector > universal selector</p>
+    <p><b>3:Origin: </b>order in which css apprears and where it come from, whether that is browser style, css from a browser extension, or your authored css</p>
+    <p><b>4: Importance</b>some css rules are weighted more heavily than others, especially with the important rule type , can override inline styles too </p>
+    <h2 style="color: green;" >example of !important</h2>
     
 </body>
-</html>
+</html> 

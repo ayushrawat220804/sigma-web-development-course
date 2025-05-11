@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw ;
+            height: 10vh;
+            margin: auto;
+            /* width: 1540px; */
+            background-color: aquamarine;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw ; /* viewport width */
+            /* height: 80vh; */ /* viewport height */ 
+            font-size: 18px;
+            margin: 23px auto ; /* 23px from top and bottom , and auto means center from left and right */
+            /* width: 1540px; */
+            background-color: aquamarine;
+            min-height: 80vh;
+            
+            
+        }
+        .container p{
+            font-size: 2em;
+        }
+
+        .mycontainer{
+            border: 12px solid green;
+            box-sizing: border-box;
+            margin: 23px auto;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            width: 80vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">this is a box</div>
+    <div class="container"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nam cumque ipsam molestias minus quas dolore, vel obcaecati provident! Dolor esse vitae qui reprehenderit deserunt, est veritatis quia atque dicta libero perspiciatis iure eos officiis quas architecto odio facere animi itaque eum. In sit, nihil, iusto voluptates deserunt maxime consectetur odit officia vitae laboriosam culpa. Alias!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, modi nulla minima harum rerum facilis. Voluptatum natus, rem nihil autem nostrum itaque nam incidunt sequi architecto, dignissimos possimus neque iure deleniti tempore cum sed. Accusantium aspernatur atque exercitationem. Ratione, ut explicabo ducimus nemo reiciendis doloribus nesciunt commodi, perspiciatis voluptatibus rem tenetur tempore corporis possimus, nam unde ullam culpa aspernatur. Esse aliquid ratione voluptates obcaecati adipisci praesentium atque iure molestiae minima asperiores, sed distinctio quas sapiente quam facere! Atque cupiditate quos, asperiores numquam voluptate nesciunt est earum perspiciatis voluptatem eveniet tenetur? Neque eveniet ullam voluptatem modi natus voluptatibus sed, facilis repudiandae distinctio nemo voluptas maxime ad exercitationem provident laboriosam impedit quisquam blanditiis! Dolores voluptatum id velit? Explicabo culpa modi eum fugiat? Corrupti inventore ex temporibus voluptas nihil laudantium, a non iusto modi obcaecati vero ipsam tempore. Consectetur ipsam quaerat ducimus maxime voluptatem! Libero voluptatem adipisci esse enim cumque eum porro cupiditate odio autem dolores mollitia doloremque possimus non consequuntur, amet consequatur quas quo sequi dolorum pariatur, corporis id ut! Quidem inventore minima aperiam amet, temporibus reiciendis a, maiores, ullam consequuntur sed voluptate officia praesentium fuga nihil labore nisi dolores ducimus. Excepturi atque harum, quibusdam perspiciatis a necessitatibus illum optio quod, ipsum hic est quasi cum ipsa. Quas reiciendis velit ad voluptatibus cumque cupiditate nemo exercitationem consequatur commodi quibusdam consequuntur nobis ipsam molestias quidem accusamus incidunt expedita nam quaerat, pariatur at voluptas? Quo voluptatibus eum officia labore inventore accusamus quibusdam ab, nemo voluptas tempora, minima fuga quisquam. Atque nemo accusantium quod beatae doloremque aspernatur excepturi, quaerat repellat quas dolorem eum consequuntur? Minus quis enim officia consequuntur sapiente voluptatibus sunt qui soluta nobis sequi, quos, itaque fugiat beatae possimus in placeat labore dolor tempora expedita dicta, iure accusantium laborum eaque! Consectetur sint culpa dignissimos doloremque vitae? Atque magni voluptatum eveniet iure autem facilis eum adipisci magnam architecto sed, quis assumenda modi quae ab aliquam! Consequatur vel eos minima iusto culpa eligendi voluptates reiciendis placeat, quasi officiis consequuntur ex quos dolores ut quo architecto, veritatis doloribus voluptatibus exercitationem. Consequuntur mollitia nesciunt tempore ipsam odit iure, itaque sunt?</p></div>
+    <div class="mycontainer">i m another container
+        <p></p>
+
+    </div>
+    <p style="font-size: 20px;">
+        1)px (Pixels): Pixels are an absolute unit of measurement. They provide a fixed size regardless of other factors like text size or screen resolution. For example, 10px means the element is 10 pixels wide or tall. <br>
+
+2)rem (Root em): "rem" stands for "root em." One "rem" is equivalent to the font size of the root element (usually the <html> element). If the root font size is set to 16px, then 1rem is equal to 16px, and 2rem is equal to 32px. It's a relative unit that makes it easy to scale elements based on the root font size. <br>
+
+3)em (Ems): "em" is also a relative unit that's relative to the font size of the parent element. If the parent element's font size is 16px and you set a child element to 2em, it would be 32px (2 times the parent's font size). <br>
+
+4)vh (Viewport Height): "vh" is a relative unit that represents a percentage of the viewport height. For example, 50vh would be 50% of the height of the viewport, so it's responsive to the screen size. <br>
+
+5)vw (Viewport Width): "vw" is similar to "vh" but is relative to the viewport's width. For example, 25vw is 25% of the viewport width. <br>
+
+
+In summary, "px" is an absolute unit, "rem" and "em" are relative units based on font sizes, and "vh" and "vw" are relative units based on the viewport's dimensions. Each of these units has its use case in web design, allowing for both fixed and responsive layouts.
+    </p>
+
+    
+</body>
+</html>
